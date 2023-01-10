@@ -1,0 +1,301 @@
+/* Base */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-color: #05124D;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+  color: #fff;
+  line-height: 1.2;
+}
+
+h1, h2 {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+button {
+  background-color: #8E8EDB;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 10%;
+  color: #fff;
+}
+
+.buttons-sections {
+  display: flex;
+  align-items: center;
+}
+
+.primary-btn {
+  margin-right: 10px;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: solid;
+  border-color: #87D0D0;
+  border-width: 2px;
+}
+
+.section-btn {
+  color: black;
+}
+
+.section-btn-alt {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Layout */
+
+.container {
+  /* background-color: orange; */
+  max-width: 120rem; /*1920px*/
+  min-width: 50rem;
+  margin: 3rem auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  height: 7rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+}
+
+.main-wrapper {
+  flex: 1;
+  /* background-color: blue; */
+}
+
+/* Header */
+
+.logo {
+  color: #fff;
+  /* margin-left: 2rem; */
+}
+
+.menu {
+  /* background-color: orangered; */
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+}
+
+.nav-links {
+  padding: 0 0 0 2rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hero section */
+
+.section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 350px;
+  /* gap: 300px; */
+}
+
+.hero-title {
+  padding-bottom: 10px;
+}
+
+.section-info {
+  padding-bottom: 15px;
+}
+
+.content-img {
+  
+}
+
+/* Brand section */
+
+.featured-section {
+  min-height: 200px;
+  padding: 4rem 0;
+}
+
+.brands {
+  margin-top: 20px;
+  background-color: #28235D;
+  height: 70px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.brands img {
+  height: 30px;
+  width: auto;
+}
+
+.brands #techimg {
+  height: 80px;
+}
+
+/* testimonials section */
+.testimonials {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.testimonials h3 {
+  color: #87D0D0;
+}
+
+.testimonial-cards {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-card {
+  background-color: #312A64;
+  border-radius: 15px;
+  height: 300px;
+  width: 30%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-card img {
+  height: 100px;
+  width: 100px;
+  margin-top: -100px;
+  margin-bottom: 30px;
+}
+
+.testimonial-card h3 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* call to action */
+.call-to-action {
+  margin: 80px 0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgb(49, 42, 100) 8%, rgb(135, 208, 208) 100%);
+  min-height: 350px;
+  padding: 3rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action h3 {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.call-to-action h2 {
+  margin-bottom: 30px;
+}
+
+/* footer  */
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper h4 {
+  margin-bottom: 10px;
+}
+
+.footer-wrapper .nav-links {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 5px;
+}
+
+.footer-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.news-input {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  outline: none;
+}
